@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wat U Mong General Information"
+            android:text="@string/wat_u_mong_general_information"
             android:textAlignment="center"
             android:textStyle="bold"
             android:layout_gravity="center_vertical"
@@ -58,7 +58,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="Doi Suthep"
+                    android:text="@string/doi_suthep"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
 
@@ -91,7 +91,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="Doi Suthep"
+                    android:text="@string/doi_suthep"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -135,7 +135,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="Doi Suthep"
+                    android:text="@string/doi_suthep"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -168,7 +168,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="Doi Suthep"
+                    android:text="@string/doi_suthep"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 

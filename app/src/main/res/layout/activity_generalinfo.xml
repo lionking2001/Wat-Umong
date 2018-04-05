@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
-            android:text="Doi Suthep"
+            android:text="@string/doi_suthep"
 
             android:textAlignment="center"
             android:textColor="@android:color/white"
@@ -61,7 +61,7 @@
            android:textAlignment="center"
            android:layout_margin="16dp"
            android:textColor="@android:color/white"
-           android:text="lorem  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popul"/>
+           android:text="@string/lorem_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged_it_was_popul"/>
 
 
 
