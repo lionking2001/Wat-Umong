@@ -4,11 +4,12 @@
     <string name="doi_suthep">Doi Suthep</string>
     <string name="wat_u_mong_general_information">Wat U Mong General Information</string>
     <string name="_12_sec">12 sec</string>
-    <string name="score">score:</string>
+    <string name="score">Score:</string>
     <string name="_12">12</string>
-    <string name="q1_dsfffffffjhjjffffewffefsfsf">Q1: dsfffffffjhjjffffewffefsfsf?</string>
+    <string name="q1_dsfffffffjhjjffffewffefsfsf">Q1: Test</string>
     <string name="a">A</string>
     <string name="check_your_bank_activities">Check your bank activities</string>
     <string name="b">B</string>
     <string name="c">C</string>
+    <string name="time">Time:</string>
 </resources>
