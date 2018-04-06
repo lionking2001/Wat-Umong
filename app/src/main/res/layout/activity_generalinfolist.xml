@@ -8,7 +8,10 @@
     android:orientation="vertical"
     android:background="@drawable/iphone6">
 
-
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
