@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/iphone6"
@@ -8,23 +7,22 @@
     android:padding="10dp">
 
     <Button
-    android:id="@+id/button_gi"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:text="General Information"
+        android:id="@+id/button_gi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:background="#ef9128"
-        android:layout_margin="10dp"/>
+        android:text="General Information" />
 
     <Button
         android:id="@+id/button_read"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Read QR code"
         android:layout_gravity="center"
-        android:background="#ef9128"
         android:layout_margin="10dp"
-        />
+        android:background="#ef9128"
+        android:text="Read QR code" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -34,51 +32,43 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AutoFocus"
-            />
+            android:text="AutoFocus" />
+
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Use Flash"
             android:layout_alignParentRight="true"
-
-            />
-
+            android:text="Use Flash" />
 
 
         <Switch
             android:id="@+id/auto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#2572bc"
-            android:layout_toRightOf="@+id/text1"
             android:layout_margin="1dp"
-            />
+            android:layout_toRightOf="@+id/text1"
+            android:background="#2572bc" />
 
         <Switch
             android:id="@+id/use"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#2572bc"
-            android:layout_toLeftOf="@id/text2"
             android:layout_margin="1dp"
-            />
+            android:layout_toLeftOf="@id/text2"
+            android:background="#2572bc" />
     </RelativeLayout>
 
 
-
-
-
     <Button
-    android:id="@+id/button_quiz"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="QUIZ"
-    android:layout_gravity="center"
-    android:background="#ef9128"
-    android:layout_margin="10dp"
+        android:id="@+id/button_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#ef9128"
+        android:text="QUIZ"
 
-    />
+        />
 
 </LinearLayout>
