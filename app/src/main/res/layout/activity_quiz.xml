@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/iphone6"
     android:orientation="vertical"
-    tools:context="com.example.sear_cheulong.watoumong.Quiz">
+    tools:context="com.example.sear_cheulong.watoumong.Quiz.Quiz">
 
     <include
         layout="@layout/app_bar"
