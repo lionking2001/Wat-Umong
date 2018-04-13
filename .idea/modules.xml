@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Wat-Umong.iml" filepath="$PROJECT_DIR$/Wat-Umong.iml" />
-      <module fileurl="file://D:\github\Wat-Umong\Wat-Umong.iml" filepath="D:\github\Wat-Umong\Wat-Umong.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\github\Wat-Umong\app\app.iml" filepath="D:\github\Wat-Umong\app\app.iml" />
     </modules>
   </component>
 </project>
