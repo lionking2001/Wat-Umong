@@ -24,12 +24,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16329d99170c8dfe7b68a2ef302c9114\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "E:\\Topic2 Android\\pjAndroid\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16329d99170c8dfe7b68a2ef302c9114\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
         "merged": "E:\\Topic2 Android\\pjAndroid\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_ic_clear_material.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16329d99170c8dfe7b68a2ef302c9114\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Topic2 Android\\pjAndroid\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\16329d99170c8dfe7b68a2ef302c9114\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "E:\\Topic2 Android\\pjAndroid\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_select_dialog_multichoice_material.xml.flat",
