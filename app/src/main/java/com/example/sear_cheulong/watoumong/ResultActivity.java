@@ -1,4 +1,9 @@
-package com.google.android.gms.samples.vision.barcodereader.quiz;
+package com.example.sear_cheulong.watoumong;
+
+/**
+ * Created by soraw on 13-Apr-18.
+ */
+
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.app.Activity;
