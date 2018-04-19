@@ -1,9 +1,4 @@
 package com.example.sear_cheulong.watoumong.Quiz;
-
-
-/**
- * Created by Workspace on 10/31/2017.
- */
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -14,7 +9,6 @@ import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
-
 import com.example.sear_cheulong.watoumong.R;
 
 

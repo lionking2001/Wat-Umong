@@ -1,9 +1,4 @@
 package com.example.sear_cheulong.watoumong.Quiz;
-
-
-/**
- * Created by Workspace on 11/1/2017.
- */
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;

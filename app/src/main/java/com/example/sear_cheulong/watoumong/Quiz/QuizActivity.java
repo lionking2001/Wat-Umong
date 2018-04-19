@@ -1,6 +1,4 @@
 package com.example.sear_cheulong.watoumong.Quiz;
-
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;

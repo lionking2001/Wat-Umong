@@ -1,12 +1,5 @@
 package com.example.sear_cheulong.watoumong.Quiz;
-
-
 import android.app.Activity;
-
-/**
- * Created by Workspace on 10/29/2017.
- */
-
 class Question  extends Activity{
 
 

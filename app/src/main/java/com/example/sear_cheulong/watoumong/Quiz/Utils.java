@@ -1,10 +1,4 @@
 package com.example.sear_cheulong.watoumong.Quiz;
-
-
-/**
- * Created by Workspace on 11/1/2017.
- */
-
 import android.content.res.Resources;
 
 public class Utils {
