@@ -11,9 +11,11 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.google.android.gms.samples.vision.barcodereader.R;
+
+import com.example.sear_cheulong.watoumong.R;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -27,8 +29,9 @@ public class QuizActivity extends AppCompatActivity {
     int qNum = 0;
     int rowCount;
     Boolean isCorrect = false;
-    TextView txtQuestion, txtScore, txtTime;
-    Button btnOptA, btnOptB, btnOptC, btnOptD;
+    TextView txtQuestion, txtScore, txtTime,textQuestion1,textQuestion2,textQuestion3,textQuestion4;
+
+    ImageButton btnOptA, btnOptB, btnOptC, btnOptD;
     Boolean time = false;
     ImageView imgBack;
     ArrayList<Integer> numbers;
@@ -54,13 +57,16 @@ public class QuizActivity extends AppCompatActivity {
 
 
         txtQuestion = (TextView) findViewById(R.id.txtQuestion);
-        btnOptA = (Button) findViewById(R.id.btnOne);
-        btnOptB = (Button) findViewById(R.id.btnTwo);
-        btnOptC = (Button) findViewById(R.id.btnThree);
-        btnOptD = (Button) findViewById(R.id.btnFour);
+        btnOptA = (ImageButton) findViewById(R.id.btnOne);
+        btnOptB = (ImageButton) findViewById(R.id.btnTwo);
+        btnOptC = (ImageButton) findViewById(R.id.btnThree);
+        btnOptD = (ImageButton) findViewById(R.id.btnFour);
         txtScore = (TextView) findViewById(R.id.txtScore);
-        txtTime = (TextView) findViewById(R.id.txtTime);
-        imgBack = (ImageView) findViewById(R.id.imgBack);
+        textQuestion1 = (TextView) findViewById(R.id.textQuestion1);
+        textQuestion2 = (TextView) findViewById(R.id.textQuestion2);
+        textQuestion3=(TextView) findViewById(R.id.textQuestion3);
+        textQuestion4 = (TextView) findViewById(R.id.textQuestion4);
+
 
         if (getIntent().hasExtra("time")) {
             time = true;
@@ -77,21 +83,21 @@ public class QuizActivity extends AppCompatActivity {
         btnOptA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getAnswer(btnOptA.getText().toString(), 1);
+                getAnswer(textQuestion1.getText().toString(), 1);
             }
         });
 
         btnOptB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getAnswer(btnOptB.getText().toString(), 2);
+                getAnswer(textQuestion2.getText().toString(), 2);
             }
         });
 
         btnOptC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getAnswer(btnOptC.getText().toString(), 3);
+                getAnswer(textQuestion3.getText().toString(), 3);
 
             }
         });
@@ -99,19 +105,19 @@ public class QuizActivity extends AppCompatActivity {
         btnOptD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getAnswer(btnOptD.getText().toString(), 4);
+                getAnswer(textQuestion4.getText().toString(), 4);
 
             }
         });
 
-        imgBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, QuizMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        imgBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(QuizActivity.this, QuizMenu.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -238,10 +244,10 @@ public class QuizActivity extends AppCompatActivity {
 
         // the method which will put all things together
         txtQuestion.setText(currentQ.getQUESTION());
-        btnOptA.setText(currentQ.getOPTA());
-        btnOptB.setText(currentQ.getOPTB());
-        btnOptC.setText(currentQ.getOPTC());
-        btnOptD.setText(currentQ.getOPTD());
+        textQuestion1.setText(currentQ.getOPTA());
+        textQuestion2.setText(currentQ.getOPTB());
+        textQuestion3.setText(currentQ.getOPTC());
+        textQuestion4.setText(currentQ.getOPTD());
 
         qNum++;
 
