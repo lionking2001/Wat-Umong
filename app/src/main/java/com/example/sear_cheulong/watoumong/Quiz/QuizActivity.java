@@ -29,7 +29,7 @@ public class QuizActivity extends AppCompatActivity {
     int qNum = 0;
     int rowCount;
     Boolean isCorrect = false;
-    TextView txtQuestion, txtScore, txtTime,textQuestion1,textQuestion2,textQuestion3,textQuestion4;
+    TextView txtQuestion, txtScore, txtTime,textQuestion1,textQuestion2,textQuestion3,textQuestion4,ScoreTxt;
     CardView choice1,choice2,choice3,choice4;
     Boolean time = false;
     ImageView imgBack;
@@ -47,14 +47,14 @@ public class QuizActivity extends AppCompatActivity {
         quesList = db.getAllQuestions();
         rowCount = db.getProfilesCount();
         URN();
-        qid = numbers.get(qNum);
-        numbers.get(qNum);
+//        qid = numbers.get(qNum);
+//        numbers.get(qNum);
         qid = qNum;
 
 
         currentQ = quesList.get(qid);
 
-
+        ScoreTxt = (TextView) findViewById(R.id.scoreTxt);
         txtQuestion = (TextView) findViewById(R.id.txtQuestion);
         choice1 = (CardView) findViewById(R.id.choice1);
         choice2 = (CardView) findViewById(R.id.choice2);
@@ -257,10 +257,10 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void reset() {
-        choice1.setBackgroundColor(getResources().getColor(R.color.gray));
-        choice2.setBackgroundColor(getResources().getColor(R.color.gray));
-        choice3.setBackgroundColor(getResources().getColor(R.color.gray));
-        choice4.setBackgroundColor(getResources().getColor(R.color.gray));
+        choice1.setBackgroundColor(getResources().getColor(R.color.orange));
+        choice2.setBackgroundColor(getResources().getColor(R.color.orange));
+        choice3.setBackgroundColor(getResources().getColor(R.color.orange));
+        choice4.setBackgroundColor(getResources().getColor(R.color.orange));
 
     }
 

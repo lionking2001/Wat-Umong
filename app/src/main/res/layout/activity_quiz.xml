@@ -30,20 +30,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="70dp"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:text="@string/score"
                 android:textColor="@android:color/white" />
-
             <TextView
+                android:id="@+id/scoreTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="28dp"
-                android:textSize="30dp"
-                android:text="@string/_12"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:layout_toLeftOf="@+id/txtScore"
+                android:text="Score:"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+
         </RelativeLayout>
     </LinearLayout>
 
