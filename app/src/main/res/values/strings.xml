@@ -12,4 +12,5 @@
     <string name="b">B</string>
     <string name="c">C</string>
     <string name="time">Time:</string>
+    <string name="your_score" />
 </resources>
