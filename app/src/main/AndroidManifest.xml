@@ -11,16 +11,18 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <activity android:name=".Quiz.QuizActivity">
+
+        </activity>
+        <activity android:name=".GeneralInfoList"></activity>
+        <activity android:name=".Quiz.ResultActivity"></activity>
+        <activity android:name=".Info1"></activity>
+        <activity android:name=".Info2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GeneralInfoList"></activity>
-        <activity android:name=".Quiz.ResultActivity"></activity>
-        <activity android:name=".Info1"></activity>
-        <activity android:name=".Info2"></activity>
         <activity android:name=".Info3"></activity>
         <activity android:name=".Info4"></activity>
     </application>
