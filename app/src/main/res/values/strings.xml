@@ -12,9 +12,13 @@
     <string name="b">B</string>
     <string name="c">C</string>
     <string name="time">Time:</string>
+<<<<<<< HEAD
     //information
     <string name="main_des">Wat Umong  is a 700-year-old Buddhist temple in Chiang Mai, Thailand. The temple was built in 1297 by King Manglai of the Lan Na dynasty. Of particular interest is a replica of the Ashok Pillar similar to the one at Vaishali with four lions and a wheel at the base and an additional larger wheel on top that acts as an umbrella for the lions. A similar pillar is also available at Sarnath Museum. The four lion head is adopted as the National Emblem of India.\n \n Reference: Wat Umong. (2017, November 02). Retrieved November 22, 2017, from https://en.wikipedia.org/wiki/Wat_Umong</string>
     <string name="second_des">The entire Wat Umong complex consists of 37.5 rai (15 acres) of wooded grounds. You can feed the fish, turtles, and ducks in a large pond. "Talking trees" have words of wisdom in Thai and English. The wat is famous for its ancient tunnels and large stupa. There are tunnels with Buddhist images below the chedi which can be easily explored. These tunnels were supposedly built by the King and painted with bush scenes so they could keep a famous but mentally deranged monk within the grounds of the monastery as he had a habit of just wandering off into the bush for days on end. Signs (proverbs) written in English and Thai hang from the trees on footpaths leading to the small lake where fish, pigeons, and turtles can be fed. Other attractions include a Buddha field of broken sculpture, a fasting Bodhisattva, a Spiritual Theatre of paintings similar to those at Suan Mokkh, reproductions of ancient Buddhist sculpture of India, and a library-museum. This last building offers many books on Buddhism and other philosophies as well as a collection of historic objects and Buddhist art.\n \n Wat Umong. (2017, November 02). Retrieved November 22, 2017, from https://en.wikipedia.org/wiki/Wat_Umong</string>
     <string name="third_des"> 1) It is the only place in Thailand we found tunnels building intentionally as a Buddhist holy place. \n 2) Mural paintings at Wat Umong are among of the oldest paintings in the country.\n 3) The paintings are in the form of Wall Paper.</string>
     <string name="fourth_des">The painting was found in tunnels 1,2,3</string>
+=======
+    <string name="your_score" />
+>>>>>>> 376e313832c8e2d578e6369d68385e231ffe00e7
 </resources>

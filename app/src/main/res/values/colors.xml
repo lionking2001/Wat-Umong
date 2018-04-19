@@ -9,4 +9,8 @@
     <color name="green">#00bfa5</color>
     <color name="colorAccent">#FF4081</color>
     <color name="backgroundorange">#ccac4813</color>
+    <color name="red">#D10000</color>
+    <color name="gray">#EAEAD0</color>
+    <color name="yellow">#FFC200</color>
+    <color name="orange">#FF7700</color>
 </resources>
