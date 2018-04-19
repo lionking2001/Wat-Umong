@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/iphone6"
     android:orientation="vertical"
+    tools:context="com.example.sear_cheulong.watoumong.Quiz.QuizActivity"
     >
 
-    <include
-        layout="@layout/app_bar"
-        android:id="@+id/app_bar"
-        />
+    <!--<include-->
+        <!--layout="@layout/app_bar"-->
+        <!--android:id="@+id/app_bar"-->
+        <!--/>-->
 
 
     <LinearLayout
@@ -71,12 +72,13 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/btnOne"
+        <android.support.v7.widget.CardView
+            android:id="@+id/choice1"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/holo_orange_dark">
+            android:layout_margin="5dp"
+            android:padding="0dp"
+            app:cardBackgroundColor="@color/yello">
 
 
             <LinearLayout
@@ -93,11 +95,7 @@
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightGray" />
+
 
                 <TextView
                     android:id="@+id/textQuestion1"
@@ -105,19 +103,28 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
                     android:textColor="@android:color/white" />
-
-
             </LinearLayout>
-        </ImageButton>
 
-        <ImageButton
-            android:id="@+id/btnTwo"
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/choice2"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/holo_orange_dark">
+            android:layout_margin="5dp"
+            android:padding="0dp"
+            app:cardBackgroundColor="@color/yello">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,11 +141,6 @@
                     android:textSize="30sp" />
 
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightGray" />
 
                 <TextView
                     android:id="@+id/textQuestion2"
@@ -146,12 +148,12 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
                     android:textColor="@android:color/white" />
-
-
             </LinearLayout>
-        </ImageButton>
+
+        </android.support.v7.widget.CardView>
 
 
     </LinearLayout>
@@ -163,13 +165,14 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-
-        <ImageButton
-            android:id="@+id/btnThree"
+        <android.support.v7.widget.CardView
+            android:id="@+id/choice3"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/holo_orange_dark">
+            android:layout_margin="5dp"
+            android:padding="0dp"
+            app:cardBackgroundColor="@color/yello">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -185,11 +188,7 @@
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightGray" />
+
 
                 <TextView
                     android:id="@+id/textQuestion3"
@@ -197,19 +196,29 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
                     android:textColor="@android:color/white" />
-
-
             </LinearLayout>
-        </ImageButton>
 
-        <ImageButton
-            android:id="@+id/btnFour"
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/choice4"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/holo_orange_dark">
+            android:layout_margin="5dp"
+            android:padding="0dp"
+            app:cardBackgroundColor="@color/yello">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -219,16 +228,12 @@
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:text="D"
+                    android:text="@string/d"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="30sp" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightGray" />
+
 
                 <TextView
                     android:id="@+id/textQuestion4"
@@ -236,12 +241,12 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
                     android:textColor="@android:color/white" />
-
-
             </LinearLayout>
-        </ImageButton>
+
+        </android.support.v7.widget.CardView>
 
 
     </LinearLayout>

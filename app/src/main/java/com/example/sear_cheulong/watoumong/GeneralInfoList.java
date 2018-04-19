@@ -3,13 +3,11 @@ package com.example.sear_cheulong.watoumong;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
+
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
-=======
->>>>>>> 7519faa590f3217287747fddd4187945174ad799
+
 import android.view.View;
-import android.widget.Button;
+
 
 public class GeneralInfoList extends AppCompatActivity implements View.OnClickListener {
     CardView info_1,info_2,info_3,info_4;
