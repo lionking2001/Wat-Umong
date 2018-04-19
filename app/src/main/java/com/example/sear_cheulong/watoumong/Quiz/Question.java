@@ -7,7 +7,7 @@ import android.app.Activity;
  * Created by Workspace on 10/29/2017.
  */
 
-class Question extends Activity {
+class Question  extends Activity{
 
 
     private int ID;
