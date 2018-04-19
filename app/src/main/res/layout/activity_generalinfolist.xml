@@ -51,14 +51,17 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
-                    android:background="@drawable/a4ba872d905"
+                    android:background="@drawable/img01"
                     />
-                <Button
-                    android:text="@string/doi_suthep"
-                    android:id="@+id/info_1"
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
 
                 <!--<TextView-->
                     <!--android:layout_width="wrap_content"-->
@@ -92,7 +95,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
-                    android:background="@drawable/wat"
+                    android:background="@drawable/img02"
                     />
 
                 <TextView
@@ -101,7 +104,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/doi_suthep"
+                    android:text="@string/app_name"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -136,7 +139,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
-                    android:background="@drawable/a4ba872d905"
+                    android:background="@drawable/img03"
                     />
 
                 <TextView
@@ -145,7 +148,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/doi_suthep"
+                    android:text="@string/app_name"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -169,7 +172,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
-                    android:background="@drawable/wat"
+                    android:background="@drawable/img04"
                     />
 
                 <TextView
@@ -178,7 +181,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/doi_suthep"
+                    android:text="@string/app_name"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
