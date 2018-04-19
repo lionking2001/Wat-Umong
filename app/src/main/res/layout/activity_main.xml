@@ -13,6 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
+            android:id="@+id/general_information"
             android:layout_width="match_parent"
             android:layout_height="270sp"
             android:background="@drawable/hqdefault" />
@@ -36,6 +37,7 @@
         android:background="#ffffff">
 
         <ImageButton
+            android:id="@+id/Quiz"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

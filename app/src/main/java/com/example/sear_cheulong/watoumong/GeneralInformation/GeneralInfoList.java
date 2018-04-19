@@ -1,4 +1,4 @@
-package com.example.sear_cheulong.watoumong;
+package com.example.sear_cheulong.watoumong.GeneralInformation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 
 import android.view.View;
+
+import com.example.sear_cheulong.watoumong.R;
 
 
 public class GeneralInfoList extends AppCompatActivity implements View.OnClickListener {

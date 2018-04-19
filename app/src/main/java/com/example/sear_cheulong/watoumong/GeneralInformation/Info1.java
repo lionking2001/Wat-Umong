@@ -1,9 +1,11 @@
-package com.example.sear_cheulong.watoumong;
+package com.example.sear_cheulong.watoumong.GeneralInformation;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.Button;
+
+import com.example.sear_cheulong.watoumong.R;
 
 /**
  * Created by Lenovo user on 6/4/2561.
