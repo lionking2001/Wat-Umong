@@ -13,4 +13,5 @@
     <color name="gray">#EAEAD0</color>
     <color name="yellow">#FFC200</color>
     <color name="orange">#FF7700</color>
+    <color name="appColor">#00B768</color>
 </resources>

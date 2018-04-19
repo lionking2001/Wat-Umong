@@ -35,14 +35,6 @@ public class ResultActivity extends Activity {
             time = true;
         }
 
-        imgBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ResultActivity.this, QuizMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         imgReplay.setOnClickListener(new View.OnClickListener() {
             @Override
