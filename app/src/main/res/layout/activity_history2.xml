@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sear_cheulong.watoumong.Home"
+    android:orientation="vertical"
+    android:background="@drawable/iphone6"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:background="@drawable/img02"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="14dp"
+            android:textColor="@android:color/white"
+            android:text="The entire Wat Umong complex consists of 37.5 rai (15 acres) of wooded grounds. You can feed the fish, turtles, and ducks in a large pond. Talking trees have words of wisdom in Thai and English. The wat is famous for its ancient tunnels and large stupa. There are tunnels with Buddhist images below the chedi which can be easily explored. These tunnels were supposedly built by the King and painted with bush scenes so they could keep a famous but mentally deranged monk within the grounds of the monastery as he had a habit of just wandering off into the bush for days on end. Signs (proverbs) written in English and Thai hang from the trees on footpaths leading to the small lake where fish, pigeons, and turtles can be fed. Other attractions include a Buddha field of broken sculpture, a fasting Bodhisattva, a Spiritual Theatre of paintings similar to those at Suan Mokkh, reproductions of ancient Buddhist sculpture of India, and a library-museum. This last building offers many books on Buddhism and other philosophies as well as a collection of historic objects and Buddhist art.\n \n Wat Umong. (2017, November 02). Retrieved November 22, 2017, from https://en.wikipedia.org/wiki/Wat_Umong"
+        />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

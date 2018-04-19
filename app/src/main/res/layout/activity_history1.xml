@@ -3,23 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.sear_cheulong.watoumong.Home"
     android:orientation="vertical"
     android:background="@drawable/iphone6"
 
->
+    >
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="150dp"
-            android:src="@drawable/download" />
+            android:background="@drawable/img01" />
 
     </LinearLayout>
 
@@ -50,9 +52,9 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:textAlignment="center"
-           android:layout_margin="14dp"
+           android:layout_margin="20dp"
            android:textColor="@android:color/white"
-           android:text="lorem  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popul"/>
+           android:text="Wat Umong is a 700-year-old Buddhist temple in Chiang Mai, Thailand. The temple was built in 1297 by King Manglai of the Lan Na dynasty. Of particular interest is a replica of the Ashok Pillar similar to the one at Vaishali with four lions and a wheel at the base and an additional larger wheel on top that acts as an umbrella for the lions. A similar pillar is also available at Sarnath Museum. The four lion head is adopted as the National Emblem of India.    Reference: Wat Umong. (2017, November 02). Retrieved November 22, 2017, from https://en.wikipedia.org/wiki/Wat_Umong" />
 
 
 
