@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.sear_cheulong.watoumong.R;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -28,8 +30,7 @@ public class QuizActivity extends AppCompatActivity {
     int rowCount;
     Boolean isCorrect = false;
     TextView txtQuestion, txtScore, txtTime,textQuestion1,textQuestion2,textQuestion3,textQuestion4;
-
-    ImageButton btnOptA, btnOptB, btnOptC, btnOptD;
+    CardView choice1,choice2,choice3,choice4;
     Boolean time = false;
     ImageView imgBack;
     ArrayList<Integer> numbers;
@@ -45,9 +46,9 @@ public class QuizActivity extends AppCompatActivity {
         QuizHelper db = new QuizHelper(this);
         quesList = db.getAllQuestions();
         rowCount = db.getProfilesCount();
-//        URN();
-//        qid = numbers.get(qNum);
-//        numbers.get(qNum);
+        URN();
+        qid = numbers.get(qNum);
+        numbers.get(qNum);
         qid = qNum;
 
 
@@ -55,10 +56,10 @@ public class QuizActivity extends AppCompatActivity {
 
 
         txtQuestion = (TextView) findViewById(R.id.txtQuestion);
-        btnOptA = (ImageButton) findViewById(R.id.btnOne);
-        btnOptB = (ImageButton) findViewById(R.id.btnTwo);
-        btnOptC = (ImageButton) findViewById(R.id.btnThree);
-        btnOptD = (ImageButton) findViewById(R.id.btnFour);
+        choice1 = (CardView) findViewById(R.id.choice1);
+        choice2 = (CardView) findViewById(R.id.choice2);
+        choice3 = (CardView) findViewById(R.id.choice3);
+        choice4 = (CardView) findViewById(R.id.choice4);
         txtScore = (TextView) findViewById(R.id.txtScore);
         textQuestion1 = (TextView) findViewById(R.id.textQuestion1);
         textQuestion2 = (TextView) findViewById(R.id.textQuestion2);
@@ -78,21 +79,21 @@ public class QuizActivity extends AppCompatActivity {
         setQuestionView();
 
 
-        btnOptA.setOnClickListener(new View.OnClickListener() {
+        choice1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getAnswer(textQuestion1.getText().toString(), 1);
             }
         });
 
-        btnOptB.setOnClickListener(new View.OnClickListener() {
+        choice2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getAnswer(textQuestion2.getText().toString(), 2);
             }
         });
 
-        btnOptC.setOnClickListener(new View.OnClickListener() {
+        choice3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getAnswer(textQuestion3.getText().toString(), 3);
@@ -100,7 +101,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        btnOptD.setOnClickListener(new View.OnClickListener() {
+        choice4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getAnswer(textQuestion4.getText().toString(), 4);
@@ -117,7 +118,6 @@ public class QuizActivity extends AppCompatActivity {
 //            }
 //        });
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -131,16 +131,16 @@ public class QuizActivity extends AppCompatActivity {
 
             switch (i) {
                 case 1:
-                    btnOptA.setBackgroundColor(getResources().getColor(R.color.green));
+                    choice1.setBackgroundColor(getResources().getColor(R.color.green));
                     break;
                 case 2:
-                    btnOptB.setBackgroundColor(getResources().getColor(R.color.green));
+                    choice2.setBackgroundColor(getResources().getColor(R.color.green));
                     break;
                 case 3:
-                    btnOptC.setBackgroundColor(getResources().getColor(R.color.green));
+                    choice3.setBackgroundColor(getResources().getColor(R.color.green));
                     break;
                 case 4:
-                    btnOptD.setBackgroundColor(getResources().getColor(R.color.green));
+                    choice4.setBackgroundColor(getResources().getColor(R.color.green));
                     break;
 
 
@@ -150,16 +150,16 @@ public class QuizActivity extends AppCompatActivity {
         } else {
             switch (i) {
                 case 1:
-                    btnOptA.setBackgroundColor(getResources().getColor(R.color.red));
+                    choice1.setBackgroundColor(getResources().getColor(R.color.red));
                     break;
                 case 2:
-                    btnOptB.setBackgroundColor(getResources().getColor(R.color.red));
+                    choice2.setBackgroundColor(getResources().getColor(R.color.red));
                     break;
                 case 3:
-                    btnOptC.setBackgroundColor(getResources().getColor(R.color.red));
+                    choice3.setBackgroundColor(getResources().getColor(R.color.red));
                     break;
                 case 4:
-                    btnOptD.setBackgroundColor(getResources().getColor(R.color.red));
+                    choice4.setBackgroundColor(getResources().getColor(R.color.red));
                     break;
             }
 
@@ -257,27 +257,27 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void reset() {
-        btnOptA.setBackgroundColor(getResources().getColor(R.color.gray));
-        btnOptB.setBackgroundColor(getResources().getColor(R.color.gray));
-        btnOptC.setBackgroundColor(getResources().getColor(R.color.gray));
-        btnOptD.setBackgroundColor(getResources().getColor(R.color.gray));
+        choice1.setBackgroundColor(getResources().getColor(R.color.gray));
+        choice2.setBackgroundColor(getResources().getColor(R.color.gray));
+        choice3.setBackgroundColor(getResources().getColor(R.color.gray));
+        choice4.setBackgroundColor(getResources().getColor(R.color.gray));
 
     }
 
-//    public void URN() {
-//
-//
-//        ArrayList<Integer> list = new ArrayList<Integer>();
-//        numbers = new ArrayList<Integer>();
-//        for (int i = 0; i < rowCount; i++) {
-//            list.add(new Integer(i));
-//        }
-//        Collections.shuffle(list);
-//        for (int i = 0; i < 11; i++) {
-//            numbers.add(new Integer(list.get(i)));
-//        }
-//
-//    }
+    public void URN() {
+
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        numbers = new ArrayList<Integer>();
+        for (int i = 0; i < rowCount; i++) {
+            list.add(new Integer(i));
+        }
+        Collections.shuffle(list);
+        for (int i = 0; i < 11; i++) {
+            numbers.add(new Integer(list.get(i)));
+        }
+
+    }
 
 
 }
