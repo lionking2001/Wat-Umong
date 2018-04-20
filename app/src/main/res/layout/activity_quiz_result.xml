@@ -4,6 +4,7 @@
     android:background="@drawable/iphone6"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
         android:layout_marginTop="25sp" />
 
     <com.example.sear_cheulong.watoumong.Quiz.DonutProgress
+
         android:id="@+id/donut_progress"
         android:layout_width="230sp"
         android:layout_height="230sp"
@@ -45,7 +47,7 @@
         android:layout_gravity="center"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15sp" />
+        android:layout_marginTop="20dp" />
 
 
 
