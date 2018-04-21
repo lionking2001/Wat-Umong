@@ -13,7 +13,7 @@ import com.example.sear_cheulong.watoumong.R;
 public class GenInfoHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "wat_umong";
+    private static final String DATABASE_NAME = "wat_umong_gi";
     // tasks table name
     private static final String TABLE_NAME = "general_information";
     // tasks Table Columns names
@@ -36,12 +36,12 @@ public class GenInfoHelper extends SQLiteOpenHelper {
                 + " TEXT, " + KEY_DESC + " TEXT, "+ KEY_IMG + " INT)";
         db.execSQL(sql);
         addInformation();
-        // db.close();
+//         db.close();
     }
 
     private void addInformation() {
 
-        GeneralInformation gi1 = new GeneralInformation("Test","Test Description",R.drawable.qr_01);
+        GeneralInformation gi1 = new GeneralInformation("Test","Test Description",R.drawable.gi_01);
         this.addInformation(gi1);
 
         // END

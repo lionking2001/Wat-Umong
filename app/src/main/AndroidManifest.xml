@@ -20,7 +20,7 @@
         <activity android:name=".GeneralInformation.Info2"></activity>
         <activity android:name=".GeneralInformation.Info3"></activity>
         <activity android:name=".GeneralInformation.Info4"></activity>
-        <activity android:name=".ShowQrResult"></activity>
+        <activity android:name=".QrResult.ShowQrResult"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

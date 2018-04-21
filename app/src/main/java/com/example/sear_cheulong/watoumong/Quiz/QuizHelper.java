@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class QuizHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "wat_umong";
+    private static final String DATABASE_NAME = "wat_umong_q";
     // tasks table name
     private static final String TABLE_QUEST = "quiz";
     // tasks Table Columns names
@@ -37,11 +37,11 @@ public class QuizHelper extends SQLiteOpenHelper {
                 + KEY_OPTB + " TEXT, " + KEY_OPTC + " TEXT, " + KEY_OPTD + " TEXT)";
         db.execSQL(sql);
         addQuestion();
-        // db.close();
+//        db.close();
     }
 
     private void addQuestion() {
-        Question q1 = new Question("1. When was Wat-Umong built 8888?", "Over 700 years ago", "Over 600 years ago", "Over 5000 years ago", "Over 10000 years ago", "Over 700 years ago");
+        Question q1 = new Question("1. When was Wat-Umong built?", "Over 700 years ago", "Over 600 years ago", "Over 5000 years ago", "Over 10000 years ago", "Over 700 years ago");
         this.addQuestion(q1);
         Question q2 = new Question("2. Which tunnel does not have any evidence of painting on the wall?", "Tunnel number 1", "Tunnel number 2", "Tunnel number 3", "Tunnel number 4", "Tunnel number 4");
         this.addQuestion(q2);

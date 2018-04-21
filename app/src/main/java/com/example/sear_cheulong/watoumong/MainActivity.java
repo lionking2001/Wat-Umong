@@ -10,12 +10,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.blikoon.qrcodescanner.QrCodeActivity;
 import com.example.sear_cheulong.watoumong.GeneralInformation.GeneralInfoList;
-import com.example.sear_cheulong.watoumong.GeneralInformation.Info1;
+import com.example.sear_cheulong.watoumong.QrResult.ShowQrResult;
 import com.example.sear_cheulong.watoumong.Quiz.QuizActivity;
 
 import java.util.ArrayList;
@@ -34,7 +33,33 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         init();
+        requirePermission();
 }
+
+    private void requirePermission() {
+        List<String> permissionsNeeded = new ArrayList<String>();
+
+        final List<String> permissionsList = new ArrayList<String>();
+        if (!addPermission(permissionsList, Manifest.permission.CAMERA))
+            permissionsNeeded.add("Camera");
+        if (!addPermission(permissionsList, Manifest.permission.READ_EXTERNAL_STORAGE))
+            permissionsNeeded.add("Read External Storage");
+        if (!addPermission(permissionsList, Manifest.permission.VIBRATE))
+            permissionsNeeded.add("Vibrate");
+
+        if (permissionsList.size() > 0) {
+            if (permissionsNeeded.size() > 0) {
+                // Need Rationale
+                String message = "You need to grant access to " + permissionsNeeded.get(0);
+                for (int i = 1; i < permissionsNeeded.size(); i++)
+                    message = message + ", " + permissionsNeeded.get(i);
+                requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
+                        REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
+            }
+            requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
+                    REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
+        }
+    }
 
     @SuppressLint("WrongViewCast")
     private void init() {
@@ -63,30 +88,7 @@ public class MainActivity extends AppCompatActivity{
         btnScanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                List<String> permissionsNeeded = new ArrayList<String>();
-
-                final List<String> permissionsList = new ArrayList<String>();
-                if (!addPermission(permissionsList, Manifest.permission.CAMERA))
-                    permissionsNeeded.add("Camera");
-                if (!addPermission(permissionsList, Manifest.permission.READ_EXTERNAL_STORAGE))
-                    permissionsNeeded.add("Read External Storage");
-                if (!addPermission(permissionsList, Manifest.permission.VIBRATE))
-                    permissionsNeeded.add("Vibrate");
-
-                if (permissionsList.size() > 0) {
-                    if (permissionsNeeded.size() > 0) {
-                        // Need Rationale
-                        String message = "You need to grant access to " + permissionsNeeded.get(0);
-                        for (int i = 1; i < permissionsNeeded.size(); i++)
-                            message = message + ", " + permissionsNeeded.get(i);
-                        requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
-                                REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
-                    }
-                    requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
-                            REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
-                }
-
+                requirePermission();
 
                 Intent i = new Intent(MainActivity.this, QrCodeActivity.class);
                 startActivityForResult(i, REQUEST_CODE_QR_SCAN);

@@ -1,9 +1,11 @@
-package com.example.sear_cheulong.watoumong;
+package com.example.sear_cheulong.watoumong.QrResult;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.sear_cheulong.watoumong.R;
 
 /**
  * Created by Lenovo user on 6/4/2561.
@@ -11,8 +13,8 @@ import android.widget.TextView;
 
 public class ShowQrResult extends AppCompatActivity {
 
-    QrResult result;
-    TextView topic,detail;
+    QrResult qrResult;
+    TextView title,detail;
     ImageView pic;
 
     @Override
@@ -20,17 +22,18 @@ public class ShowQrResult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrresult);
 
-        result = new QrResult();
-
         int index = getIntent().getIntExtra("index",0);
 
-        topic = (TextView) findViewById(R.id.tvQrTopic);
-        topic.setText(result.getTopic(index));
+        qrResult = QrResults.getInstance(this).getQrResultList().get(index);
+
+
+        title = (TextView) findViewById(R.id.tvQrTopic);
+        title.setText(qrResult.getTitle());
 
         detail = (TextView) findViewById(R.id.tvQrDescription);
-        detail.setText(result.getDetail(index));
+        detail.setText(qrResult.getDescription());
 
         pic = (ImageView) findViewById(R.id.imgQr);
-        pic.setImageResource(result.getResId(index));
+        pic.setImageResource(qrResult.getImg());
     }
 }
