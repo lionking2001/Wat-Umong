@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+    layout="@layout/app_bar"
+    android:id="@+id/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/general_information"
+            android:layout_width="match_parent"
+            android:layout_height="270sp"
+            android:background="@drawable/hqdefault" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Information"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="160sp"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/Quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/wat_umongquiz">
+
+        </ImageButton>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

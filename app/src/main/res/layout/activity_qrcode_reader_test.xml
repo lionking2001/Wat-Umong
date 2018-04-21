@@ -7,7 +7,6 @@
     tools:context="com.example.sear_cheulong.watoumong.QRCodeReaderTest">
 
     <Button
-        android:id="@+id/btnScanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="qr code scanner"/>

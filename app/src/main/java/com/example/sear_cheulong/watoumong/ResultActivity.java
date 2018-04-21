@@ -15,6 +15,9 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
+import com.example.sear_cheulong.watoumong.Quiz.DonutProgress;
+import com.example.sear_cheulong.watoumong.Quiz.QuizActivity;
+
 public class ResultActivity extends Activity {
 
 	DonutProgress progress;
@@ -41,7 +44,7 @@ public class ResultActivity extends Activity {
 		imgBack.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Intent intent = new Intent(ResultActivity.this, QuizMenu.class);
+				Intent intent = new Intent(ResultActivity.this, MainActivity.class);
 				startActivity(intent);
 				finish();
 			}
