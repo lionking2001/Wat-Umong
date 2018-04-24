@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/iphone6"
     android:orientation="vertical"
-    tools:context="com.example.sear_cheulong.watoumong.Quiz.QuizActivity"
-    >
+    tools:context="com.example.sear_cheulong.watoumong.Quiz.QuizActivity">
 
     <!--<include-->
-        <!--layout="@layout/app_bar"-->
-        <!--android:id="@+id/app_bar"-->
-        <!--/>-->
+    <!--layout="@layout/app_bar"-->
+    <!--android:id="@+id/app_bar"-->
+    <!--/>-->
 
 
     <LinearLayout
@@ -30,17 +29,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="70dp"
-                android:textSize="30sp"
                 android:text="@string/score"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
             <TextView
                 android:id="@+id/scoreTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/txtScore"
-                android:text="0"
+                android:text="Score:"
                 android:textColor="#ffffff"
-                android:textSize="30sp"/>
+                android:textSize="30sp" />
 
         </RelativeLayout>
     </LinearLayout>
@@ -94,25 +94,18 @@
                     android:textSize="30sp" />
 
 
-
                 <TextView
                     android:id="@+id/textQuestion1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
-
-
-
-
-
 
 
         <android.support.v7.widget.CardView
@@ -139,16 +132,15 @@
                     android:textSize="30sp" />
 
 
-
                 <TextView
                     android:id="@+id/textQuestion2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -187,25 +179,18 @@
                     android:textSize="30sp" />
 
 
-
                 <TextView
                     android:id="@+id/textQuestion3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
-
-
-
-
-
 
 
         <android.support.v7.widget.CardView
@@ -232,16 +217,15 @@
                     android:textSize="30sp" />
 
 
-
                 <TextView
                     android:id="@+id/textQuestion4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:textSize="15sp"
                     android:text="@string/check_your_bank_activities"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
