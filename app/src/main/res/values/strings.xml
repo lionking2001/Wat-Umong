@@ -22,5 +22,8 @@
     <string name="your_score" />
     <string name="qr_topic">Topic Here</string>
     <string name="qr_description">Description Here</string>
+    <string name="the_history_of_wat_umong">The History of Wat Umong</string>
+    <string name="what_is_unique_about_wat_umong">What is Unique </string>
+    <string name="tunnel_in_wat_umong">Tunnel in Wat Umong</string>
 
 </resources>

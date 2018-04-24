@@ -60,7 +60,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/app_name"
+                    android:text="@string/the_history_of_wat_umong"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -98,7 +98,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/app_name"
+                    android:text="General Information"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -144,7 +144,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/app_name"
+                    android:text="@string/what_is_unique_about_wat_umong"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
@@ -179,7 +179,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
-                    android:text="@string/app_name"
+                    android:text="@string/tunnel_in_wat_umong"
                     android:textStyle="bold"
                     android:textColor="@android:color/white" />
 
